@@ -1,0 +1,21 @@
+<div class="card my-5" *ngIf="usserLogged">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Number</th>
+
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.idclient }}</td>
+        <td>{{ user.nombreCliente }}</td>
+        <td>{{ user.numeroCliente }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
