@@ -1,0 +1,30 @@
+<!-- Default form login -->
+
+<form class="bg-dark">
+  <p class="h4 mb-3 text-center text-white">Ingreso Cliente</p>
+
+  <div class="form-group row justify-content-around">
+    <input type="user" #username id="user" class="col-sm-3 col-form-label" placeholder="Usuario">
+  </div>
+
+  <div class="form-group row justify-content-around">
+    <input type="password" #password id="password" class="col-sm-3 col-form-label"
+           placeholder="Password">
+  </div>
+
+  <div class="form-group row justify-content-around">
+
+    <button mdbBtn color="info" block="true" class="list-inline-item" class="btn btn-info center" type="submit"
+            (click)="logIn(username.value, password.value, $event)" id="login-button">Ingresar
+    </button>
+  </div>
+
+  <div class="form-group row justify-content-around">
+    <p class="text-white">Not a member?
+      <a href="">Register</a>
+    </p>
+  </div>
+
+</form>
+
+
